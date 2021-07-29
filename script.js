@@ -65,6 +65,11 @@ phone.addEventListener('blur' , ()=>{
     }
 })
 
+let success = document.getElementById('success');
+let failuer = document.getElementById('failuer');
+success.style.display = 'none';
+failuer.style.display = 'none';
+
 
 let submit = document.getElementById('submit');
 submit.addEventListener('click' , (e)=>{
@@ -73,13 +78,13 @@ submit.addEventListener('click' , (e)=>{
 
     if(velidname && velidEmail && velidPhone){
         console.log("all are velid");
-        let success = document.getElementById('success');
+        success.style.display = 'block';
         success.classList.add('show');
         failuer.classList.remove('show');
     }
     else{
         console.log("not all vellid");
-        let failuer = document.getElementById('failuer');
+        failuer.style.display = 'block';
         failuer.classList.add('show');
         success.classList.remove('show');
     }
