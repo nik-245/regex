@@ -13,8 +13,14 @@
   <body>
     <div class="container">
         <!-- alert msg when form will sumbmited -->
-        <div id="success" class="alert alert-success alert-dismissible fade show " role="alert">
+        <div id="success" class="alert alert-success alert-dismissible fade  " role="alert">
             <strong>sucsess !</strong> Your form are submited
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+          <!-- when not all are velid -->
+        <div id="failuer" class="alert alert-danger alert-dismissible fade " role="alert">
+            <strong>something wrong !</strong> Your form are not submited
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
         <!-- form  componet of bootstrap -->
@@ -57,7 +63,7 @@
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
            
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
           
         </form>
     
